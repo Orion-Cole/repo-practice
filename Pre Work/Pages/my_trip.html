@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Orion | My Trip</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="icon" type="image/x-icon" href="../Images/favicon-32x32.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="Orion's Trip">
+        <meta name="author" content="Orion Cole">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>                  
+
+        <script>
+            function myFunction() {
+                document.getElementById('thanks').innerHTML = 'Thank you!';
+            }
+        </script>
+
+        <nav>
+            <ul class="nav_list">
+                <li class="nav_item"><a class="nav_links" href="../index.html"><b>Home</b></a></li>
+                <li class="nav_item"><a class="nav_links" href="interests.html"><b>Interests</b></a></li>
+                <li class="nav_item"><a id="page_prime" class="nav_links" href="my_trip.html"><b>My Trip</b></a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+        <h1 class="big_h">My Alaskan Trip</h1> 
+            
+        <img id="snow_selfie" height="30%" width="30%" src="../Images/sled_dog.jpg">
+
+        <p id="my_trip_p">Last winter I had the chance to visit Alaska for a week and it was an amazing experience. I stayed at Chena Hotsprings an hour north of Fairbanks and had the opportunity to ride in a dog sled, drive a Ski-doo, swim in the hot springs and even got to see moose!<br>
+        It was a beautiful yet inhospitable place where I met amazing people, ate delicious food and nearly froze to death on top of a mountain. &#128517
+        </p>
+        <h3 id="gallery_h"><b>Gallery</b></h3>
+        <div id="gallery">
+        <img class="gallery_pictures" height="30%" width="30%" src="../Images/skidoo.jpg" alt="skidoo">
+        <img class="gallery_pictures" height="30%" width="30%" src="../Images/tree.jpg" alt="snowy tree">
+        <img class="gallery_pictures" height="30%" width="30%" src="../Images/truck.jpg" alt="snowy truck">
+        <img class="gallery_pictures" height="30%" width="30%" src="../Images/mountain_top.jpg" alt="mountain top">
+        <a href="https://en.wikipedia.org/wiki/Aurora"><img class="gallery_pictures" height="30%" width="30%" src="../Images/aurora.jpg" alt="aurora"></a>
+        <img class="gallery_pictures" height="30%" width="30%" src="../Images/yurt.jpg" alt="snowy yurt">
+        </div>
+    
+
+
+
+        
+        <video height="50%" width="50%" controls>
+            <source src="../Images/sled_ride.mp4" type="video/mp4">
+        </video>
+
+        <video height="50%" width="50%" controls>
+            <source src="../Images/flight_video.mp4" type="video/mp4">
+        </video>
+        
+
+
+
+
+        <form>
+            <h3>Where in the world would <i>you</i> like to visit?</h3>
+            First Name: <br>
+            <input type="text" name="first_Name" placeholder="John"> <br>
+            Last Name: <br>
+            <input type="text" name="last_Name" placeholder="Smith"> <br>
+            Destination: <br>
+            <input type="text" name="destination" placeholder="Madagascar"> <br><br>
+            <input onclick="myFunction()" class="buttons" type="button" name="submit" value="Submit">
+            <p id="thanks"></p>
+        </form>
+
+        
+        </section>
+    </body>
+</html>
